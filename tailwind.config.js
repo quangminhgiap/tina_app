@@ -11,6 +11,7 @@ const chroma = require("chroma-js");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
+  content: ["./src/**/*.{html,js}"],
   purge: [],
   darkMode: "class",
   theme: {

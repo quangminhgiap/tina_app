@@ -5,7 +5,7 @@ export const Layout = (props) => {
   return (
     <div
       style={{
-        margin: '3rem',
+        margin: "3rem",
       }}
     >
       <Head>
@@ -17,12 +17,16 @@ export const Layout = (props) => {
         <Link href="/">
           <a>Home</a>
         </Link>
-        {' | '}
+        {" | "}
         <Link href="/posts">
           <a>Posts</a>
+        </Link>
+        {" | "}
+        <Link href="/forms">
+          <a>Forms</a>
         </Link>
       </header>
       <main>{props.children}</main>
     </div>
-  )
+  );
 }
