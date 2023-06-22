@@ -50,6 +50,32 @@ const schema = defineSchema({
         },
       },
     },
+    {
+      label: "Forms",
+      name: "form",
+      path: "content/form",
+      fields: [
+        {
+          type: "string",
+          label: "Title",
+          name: "title",
+        },
+        {
+          type: "string",
+          label: "Form",
+          name: "body",
+          isBody: true,
+          ui: {
+            component: "textarea",
+          },
+        },
+      ],
+      ui: {
+        router: ({ document }) => {
+          return `/forms/${document._sys.filename}`;
+        },
+      },
+    },
   ],
 });
 
