@@ -12,7 +12,7 @@ export default function Home(props) {
 
   return (
     <Layout>
-      <code>
+      {/* <code>
         <pre
           style={{
             backgroundColor: "lightgray",
@@ -20,7 +20,43 @@ export default function Home(props) {
         >
           {JSON.stringify(data.form, null, 2)}
         </pre>
-      </code>
+      </code> */}
+      <form class="w-full max-w-sm">
+        <div class="md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label
+              class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+              for="inline-full-name"
+            >
+              Full Name
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <input
+              class="bg-gray-200 w-full py-2 px-4 text-gray-700 leading-tight"
+              id="inline-full-name"
+              type="text"
+            />
+          </div>
+        </div>
+        <div class="md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label
+              class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+              for="inline-password"
+            >
+              Password
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <input
+              class="bg-gray-200 w-full py-2 px-4 text-gray-700 leading-tight"
+              id="inline-password"
+              type="password"
+            />
+          </div>
+        </div>
+      </form>
     </Layout>
   );
 }
