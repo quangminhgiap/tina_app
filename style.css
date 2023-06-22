@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+div[class^="ModalBody"],
+div[class*=" ModalBody"] {
+  min-height: 42vh;
+}
+
+div[class^="BlockMenuWrapper"],
+div[class*=" BlockMenuWrapper"] {
+  pointer-events: none;
+}
+
+div[class^="BlockMenu-"],
+div[class*=" BlockMenu-"] {
+  pointer-events: all;
+}
