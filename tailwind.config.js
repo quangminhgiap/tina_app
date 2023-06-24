@@ -11,7 +11,7 @@ const chroma = require("chroma-js");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js, md, mdx, ts, tsx, jsx}"],
   purge: [],
   darkMode: "class",
   theme: {
@@ -61,11 +61,11 @@ module.exports = {
           const newVars =
             typeof value === "string"
               ? {
-                  [`--color${colorGroup}-${colorKey}`]: value,
-                  [`--color-rgb${colorGroup}-${colorKey}`]: chroma(value)
-                    .rgb()
-                    .toString(),
-                }
+                [`--color${colorGroup}-${colorKey}`]: value,
+                [`--color-rgb${colorGroup}-${colorKey}`]: chroma(value)
+                  .rgb()
+                  .toString(),
+              }
               : extractColorVars(value, `-${colorKey}`);
 
           return { ...vars, ...newVars };
