@@ -25,12 +25,14 @@ export default function Home(props) {
       </code> */}
       </Layout>
 
+      <div className="text-3xl font-bold">Test</div>
+
       <div className="relative flex flex-col flex-wrap py-8 px-8 lg:px-12 2xl:px-16 mx-auto md:items-center md:flex-row">
         <form className="w-full max-w-sm">
           <div className="md:flex md:items-center mb-6">
             <div className="md:w-1/3">
               <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                Full Name
+                Username
               </label>
             </div>
             <div className="md:w-2/3">
@@ -38,6 +40,20 @@ export default function Home(props) {
                 className="bg-gray-200 w-full py-2 px-4 text-gray-700 leading-tight"
                 id="inline-full-name"
                 type="text"
+              />
+            </div>
+          </div>
+          <div className="md:flex md:items-center mb-6">
+            <div className="md:w-1/3">
+              <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
+                Email
+              </label>
+            </div>
+            <div className="md:w-2/3">
+              <input
+                className="bg-gray-200 w-full py-2 px-4 text-gray-700 leading-tight"
+                id="inline-full-name"
+                type="email"
               />
             </div>
           </div>

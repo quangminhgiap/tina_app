@@ -1,9 +1,9 @@
-@config "./tailwindcss-config.js";
+/* @config "./tailwindcssconfig.js"; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-details summary::-webkit-details-marker {
+/* details summary::-webkit-details-marker {
   display: none;
 }
 
@@ -20,4 +20,4 @@ div[class*=" BlockMenuWrapper"] {
 div[class^="BlockMenu-"],
 div[class*=" BlockMenu-"] {
   pointer-events: all;
-}
+} */

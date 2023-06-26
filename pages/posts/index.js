@@ -12,8 +12,9 @@ export default function PostList(props) {
   });
   const postsList = data.postConnection.edges;
   return (
+    <>
     <Layout>
-      <h1>Posts</h1>
+      <h1 className="text-3xl font-bold underline">Posts111</h1>
       <div>
         {postsList.map((post) => (
           <div key={post.node.id}>
@@ -24,6 +25,8 @@ export default function PostList(props) {
         ))}
       </div>
     </Layout>
+    <h1 className="text-4xl font-bold underline">Posts111</h1>
+    </>
   );
 }
 

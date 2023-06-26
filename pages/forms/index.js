@@ -14,7 +14,7 @@ export default function FormList(props) {
   const formsList = data.formConnection.edges;
   return (
     <Layout>
-      <h1 style={{ color: red }}>Forms</h1>
+      <h1>Forms</h1>
       <div>
         {formsList.map((form) => (
           <div key={form.node.id}>
